@@ -1,0 +1,21 @@
+@import "../CSS/UTILS/variabili.css";
+
+@font-face {
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Bold.otf);
+    font-family: suprabold;
+}
+
+@font-face { 
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Regular.otf);
+    font-family: supraregular ;
+}
+
+@font-face {
+    font-family: suprathin;
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Thin.otf);
+}
+
+@font-face{
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Light.otf);
+    font-family: supralight;
+}

@@ -27,6 +27,8 @@
     font-family: supraregular;
     box-sizing: border-box;
     color: var(--ea-black);
+ 
+    
     }
     h1{
       font-size: 3vh;
@@ -36,31 +38,57 @@
     font-size: 3vh;
     font-family: supraregular; 
     }
+     h5:hover{
+        color: var(--ea-theme-color);
+      }
+      h4{
+        font-size: 1.4vh;
+
+      }
+      h6{
+        font-size: 1.5vh;
+        font-family:supraregular;  
+      }
+     
     p{
     font-size:var(--default-font-size);
     color: var(--ea-lightgrey);
     line-height: 3.2vh;
     }
+    .small-text{
+      font-size: 1.4vh;
+      color: var(--ea-black);
+    }
+    hr{
+      display: none;
+      width: 85%;
+      align-self: center;
+      justify-content: center;
+    }
     footer{
       display: flex;
       flex-direction: column;
       }
+      a{
+        text-decoration: none;
+      }
+      
+     
+      .main-padding{
+        padding: 3% 19% 3% 12%;
+      }
 
     /*PRIMA PARTE */
-    .back-image{
-      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play-platform-landing-page/images/2021/01/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w");
-      height:50vh;
-      width: 100%;
-      display: flex;
   
-      flex-wrap: wrap;
+    .image-bar{
+      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play-platform-landing-page/images/2021/01/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w");
+      background-size: cover;
     }
-    
       .image-box{
         display: flex;
+        
         flex-direction: column;
         justify-content: center;
-        padding-left: 12%;
         gap: 2.4vh;
         text-align: left;
        }
@@ -74,11 +102,11 @@
     /*Gestione Bottoni*/
 .button{
 border: 2px solid var(--ea-lightgrey);
-border-radius: 0.6vh;
+border-radius: 3px;
+position:relative;
 font-family: suprabold;
-height: 8vh;
-width: 20vh;
-padding: 2%;
+height: 60px;
+width: 200px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -88,9 +116,8 @@ transition: 0.1s;
   border-color: var(--ea-black);
   color: var(--ea-black);
 }
-.button:hover{
-transform: scaleX(112%);
-transform: scaleY(110%);
+.button:hover {
+transform: scale(103%);
 }
 
 
@@ -99,28 +126,133 @@ transform: scaleY(110%);
     display: flex;
     width: 100%;
     height: 15vh;
-    padding: 1% 0% 1% 12%;
     background-color: var(--footer-blue);
-    gap: 50vh;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+   
+
     }
     
-
-
     /*PARTE GRIGIA*/  
     .grey-bar{
     background-color: var(--ea-lightgrey);
     display: flex;
-    
-    
+    width: 100%;
+    height: 180px;
+    justify-content: space-between;
     }
+
+    .links{
+      display: flex;
+      gap: 20px;  
+    }
+
+    .social-part{
+      display: flex;
+      flex-direction: column;
+      padding-left: 120px;
+      gap: 15px;
+      
+    }
+    .logo{
+      height: 20px;
+      width: 20px;
+      transition: 0.2s;
+      opacity: 85%; 
+     
+    }
+    .icone{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;  
+    }
+    .logo:hover{
+      transform: scale(120%);
+     
+    }
+
+    
+
+    /*Parte Bianca*/
+
     .white-bar{
-    background-color: var(--ea-lightgrey);
+    background-color:var(--ea-white);
+    width: 100%;
+    height: 400px;
     
     }
 
+    .first-white{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+
+
+    #ea-logo{
+      height: 55px;
+      width: 55px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+    #ea-logo2{
+      margin-top: 20px;
+      height: 55px;
+      width: 55px;
+      display: none;
+    }
+    .footer-list{
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+    }
+   
+
+    .lingue-btn{
+      border: 2px solid var(--ea-grey);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      
+    }
+    .lingua{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 9px;
+    }
+  #it{
+    height: 25px;
+    width: 25px;
+  }
+    #f-giu{
+      height: 10px;
+      width: 10px;
+      display: block;
+    }
+    #f-su{
+      height: 10px;
+      width: 10px;
+      display: none;
+    }
+.riga-footer{
+  display: flex;
+  margin-right: 15px;
+  margin-top: 12px;
+  column-gap: 24px;
+  justify-content: left;
+
+}
+
+.trust{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 
 
 
     
- 
+  

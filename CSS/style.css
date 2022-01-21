@@ -1,27 +1,1092 @@
+
 @import "../CSS/UTILS/variabili.css";
 
 
 @font-face {
-    src: url(../CSS/UTILS/FONT/SuperaGothic-Bold.otf);
-    font-family: suprabold;
-}
-
-@font-face { 
-    src: url(../CSS/UTILS/FONT/SuperaGothic-Regular.otf);
-    font-family: supraregular ;
+  src: url(../CSS/UTILS/FONT/SuperaGothic-Bold.otf);
+  font-family: suprabold;
 }
 
 @font-face {
-    font-family: suprathin;
-    src: url(../CSS/UTILS/FONT/SuperaGothic-Thin.otf);
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Regular.otf);
+    font-family: supraregular;
 }
 
-@font-face{
-    src: url(../CSS/UTILS/FONT/SuperaGothic-Light.otf);
-    font-family: supralight;
+@font-face {
+  font-family: suprathin;
+  src: url(../CSS/UTILS/FONT/SuperaGothic-Thin.otf);
 }
-/*DEFAULT SETTINGS */
+
+@font-face {
+  src: url(../CSS/UTILS/FONT/SuperaGothic-Light.otf);
+  font-family: supralight;
+}
+
+/* INIZIO VALENTIN */
+
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: suprathin;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+header ul {
+    background: black;
+    width: 100vw;
+    height: 40px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+}
+
+header ul li a{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li a svg{
+    opacity: .7;
+}
+
+header ul li a svg:hover{
+    opacity: .9;
+}
+
+.man-v{
+    width: 24px;
+    height: 24px;
+    fill: white;
+    padding: 3px;
+}
+
+.pint-v{
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+
+.ea-v{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+/* Codice barra nera iniziale  */
+
+
+nav{
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+}
+
+nav a svg{
+    cursor: pointer;
+    transform: rotate(-90deg);
+    width: 20px;
+    max-height: 40px;
+    margin-left: 15px;
+}
+
+nav a img{
+    max-height: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+
+.contp-v{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    z-index: 3;
+    margin-right: 20px;
+}
+
+.contp-v span{
+    font-family: supraregular;
+    cursor: pointer;
+}
+.contenitore-lista-v{
+    display: flex;
+    position: absolute;
+    top: 4.1rem;
+    background-color: rgba(255, 253, 255, .95);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 4px;
+    margin: 0px 0px 0px -35px;
+    padding: 10px 0px 10px 35px;
+}
+
+.contenitore-lista-v.y-v{
+    margin: 0px 0px 0px -35px;
+    padding: 40px 0px 40px 35px;
+}
+
+.contenitore-i-v{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0px 25px 0px 0px;
+    padding-right: 30px;
+}
+
+.contenitore-i-v a{
+    text-decoration: none;
+    color: #161616;
+    font-weight: 900;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+.contp-v a:hover{
+    color: #FF4747;
+}
+.elenco-v:hover{
+    color: #FF4747;
+}
+
+
+
+.contp-v:hover .contenitore-lista-v{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contp-v:hover .contenitore-i-v{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.contenitore-i-v.pp-v{
+    display: inline-flex;
+}
+
+.contenitore-i-v.pp1-v{
+    border: none;
+}
+
+.contenitore-i-v span{
+    font-family: suprabold;
+    padding: 0px 0px 5px;
+    font-size: 16px;
+}
+
+.contenitore-i-v a:hover{
+    color: #FF4747;
+}
+
+.contenitore-i-v hr{
+    opacity: .5;
+}
+
+/* Codice barra menu */
+
+.contenitore-v{
+    width: 100%;
+    position: relative;
+}
+
+.contenitore2-v{
+    position: absolute;
+    top: 0;
+    left: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    padding: 32px 7.5vw;
+    color: white;
+    text-align: center;
+    align-self: flex-start;
+
+}
+
+.contenitore-v img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#logo-v{
+
+     width: 110px;
+     height: 131px;
+     flex-shrink: 0;
+     max-width: 100%;
+}
+
+.contenitore2-v h2{
+    font-weight: bolder;
+    margin-top: 0.35rem;
+}
+
+.contenitore2-v h6{
+    font-size: 16px;
+    margin-top: 0.35rem;
+}
+
+#btn-giochi-v {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.btn-g-v {
+    position: absolute;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: supraregular;
+}
+
+#btn-giochi-v:hover a {
+    padding: 1rem;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+   
+   .smallest-v, .small-v, .medium-v, .big-v{
+    display: none;
+}
+
+/* Codice contenitore logo */
+
+
+@media screen and (max-width: 1455px){
+    .bigger-v{
+        display: none;
+    }
+
+    .big-v{
+        display: block;
+    }
+
+    #logo-v{
+        width: 90px;
+        height: 107px;
+    }
+
+    .contenitore2-v{
+        left: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 1023px){
+    .bigger, .big-v{
+        display: none;
+    }
+
+    .medium-v{
+        display: block;
+    }
+
+    #logo-v{
+        width: 90px;
+        height: 107px;
+    }
+
+    .contp-v{
+        display: none;
+    }
+
+    .contenitore2-v{
+        left: 3rem;
+    }
+
+    .contenitore2-v h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .bigger-v, .big-v, .medium-v{
+        display: none;
+    }
+
+    .small-v{
+        display: block;
+    }
+
+    #logo-v{
+        display: none;
+    }
+
+     
+    .contenitore2-v{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    #btn-giochi-v a{
+        width: 80%;
+        margin-top: 2rem;
+    }  
+}
+
+
+@media screen and (max-width: 320px){
+    .bigger-v, .big-v, .medium-v, .small-v{
+        display: none;
+    }
+
+    .smallest-v{
+        display: block;
+    }
+
+    #logo-v{
+        display: none;
+    }
+
+    .contenitore2-v a{
+        width: 100%;
+    }
+
+    .contenitore2-v{
+        width: 100%;
+        left: 0;
+        top: 2rem;
+    }
+
+    #btn-giochi-v a{
+        width: 80%;
+    } 
+}
+/* FINE CODICE CSS VALENTIN */
+
+
+
+/* INIZIO IONUT */
+#container-box {
+    max-width: 1300px;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-ionut {
+    position: relative;
+    display: flex;
+    background-size: contain;
+    width: 370px;
+    height: 370px;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  #box-1 {
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2021/07/fifa22-key-art.jpg.adapt.crop1x1.767w.jpg);
+  }
+  
+  #box-2 {
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2021/06/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
+  }
+  
+  #box-3 {
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2019/01/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg);
+  }
+  
+  #box-4 {
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
+  }
+  
+  #box-5 {
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2020/10/nfshpr-keyart-1x1.jpg.adapt.crop1x1.767p.jpg);
+  }
+  
+  #box-6 {
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2021/04/f1-2021-keyart.jpg.adapt.crop1x1.767p.jpg);
+  }
+  
+  .logo-giochi {
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 70px;
+    z-index: 2;
+  }
+  
+  .layover {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .sito-uficiale-ionut {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    z-index: 3;
+    font-family: supralight;
+
+  .hover-ionut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transition: 500ms;
+  }
+  
+  
+  .official-site {
+    display: none;
+  }
+  
+  .official-site a {
+    font-weight: 700;
+  }
+  
+  .layover:hover .official-site {
+    display: block;
+  }
+  
+  .layover:hover {
+    background: linear-gradient(
+      to left,
+      rgba(158, 7, 27, 0.863),
+      rgba(14, 45, 226, 0.911)
+    );
+  }
+  
+  .layover:hover .logo-giochi {
+    transition: 500ms;
+    transform: translateY(-35px);
+  }
+  /*qui finisce la gestione dei box con la scelta dei giochi*/
+  
+  /*qui inizia il bottone sotto la scelta dei giochi*/
+  #btn-giochi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .btn-g {
+    position: absolute;
+    border: 2px black solid;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #btn-giochi:hover a {
+    padding: 1rem;
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+  
+  /*qui finisce il bottone sotto la secelta dei giochi*/
+  
+  
+  @media screen and (max-width: 1920px) {
+    .risparmia {
+      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/component-assets/common/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg 1456w");
+      width: 100%;
+      height: 112px;
+    }
+  }
+  @media screen and (max-width: 1455px) {
+    .risparmia {
+      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/component-assets/common/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg 1456w");
+      width: 100%;
+      height: 96px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .risparmia {
+      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/component-assets/common/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1024w.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 163px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
+  
+  @media screen and (max-width: 900px) {
+    .risparmia {
+      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/component-assets/common/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.768w.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 226px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo-bottone-ionut-ea {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+   }
+   
+  .btn-giochi-ea-ionut {
+    width: 300px;
+    height: auto;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+  }
+  
+  .btn-g-ionut {
+    position: absolute;
+    border: 2px rgb(255, 254, 254) solid;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: supraregular;
+  }
+  
+  .btn-giochi-ea-ionut:hover a {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 6.2rem;
+    padding-right: 6.2rem;
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+  #btn-giochi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .btn-g {
+    position: absolute;
+    border: 2px black solid;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #btn-giochi:hover a {
+    padding-left: 9.2rem;
+    padding-right: 9.2rem;
+    transition: 0.2s;
+    transition-timing-function: linear;}
+  }
+  
+  @media screen and (max-width: 320px) {
+    .risparmia {
+      background-image: url("https://media.contentapi.ea.com/content/dam/eacom/subscription/component-assets/common/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.320w.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 259px;
+    }
+  }
+
+/* qui inizia la parte delle EA play pass sotto team of the year*/
+.risparmia img {
+  width: 138px;
+  height: 45px;
+}
+.risparmia {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+}
+.risparmia h2 {
+  font-family: supraregular;
+  color: #fff;
+}
+
+.risparmia-alla-grande{
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-bottone-ionut-ea {
+  display: flex;
+  width: 40%;
+  height: auto;
+  align-items: center;
+}
+
+.btn-giochi-ea-ionut {
+  width:300px;
+  height: auto;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.btn-g-ionut {
+  position: absolute;
+  border: 2px rgb(255, 254, 254) solid;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: supraregular;
+}
+
+.btn-giochi-ea-ionut:hover a {
+  padding: 1.2rem;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+/*qui finisce la parte ea play*/
+
+/*qui inizia la gestione del box con la scelta dei giochi*/
+.container-min-max {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titolo-ionut {
+  font-size: 2.5rem;
+  font-family: supraregular;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 50px;
+}
+ /* FINE IONUT */
+
+
+
+
+
+/* INIZIO ALBRIM */
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    width: 90vmax;
+    height: 3.1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    flex-wrap: nowrap;
+    margin: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+
+}
+
+.tab-links, .tab-links-fifa{
+    position: relative;
+    border: none;
+    height: 100%;
+    font-family: supraregular;
+    padding: 5px 10px ;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    background-color: white;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin: 0;
+
+
+}
+
+.tab-links:hover, .tab-links-fifa:hover {
+    background-color: rgba(148, 148, 148, 0.5);
+}
+
+.tab-links:nth-child(1n+0):after, .tab-links-fifa:after{
+    content: "";
+    position: absolute;
+    border-left: 2px solid rgba(0, 0, 0, 0.15);
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#inside-ea::after {
+    border-left: none;
+}
+
+
+.tab-links:focus::before {
+    content: "";
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    width: 65%;
+    border-bottom: 3px solid red;
+}
+.tab-links-fifa:focus::before{
+content: "";
+    position: absolute;
+    left: 0.6em;
+    bottom: 0;
+    width: 70%;
+    border-bottom: 3px solid red;
+}
+
+.titolo-logo {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ultime-novita {
+    text-align: center;
+    font-family: supraregular;
+    font-size: 33px;
+}
+
+.tito2UN {
+    padding: 0px;
+    margin: 10px 0 5px 10px;
+}
+
+.testoUN {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.testo-square {
+    text-align: left;
+}
+
+.testo-padding {
+    font-family: supraregular;
+    font-weight: bolder;
+
+}
+
+.titolo-electronic-arts {
+    color: var(--ea-theme-color);
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.data-titoli-electronic {
+    font-size: 13px;
+    margin-left: 1em;
+
+}
+
+.testo-padding {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+}
+
+
+.squares {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    background-color: white;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 2%;
+    width: 95vmax;
+
+}
+
+.square {
+    background: white;
+    height:33rem;
+    width: 21rem;
+    filter: drop-shadow(5px 5px 10px rgb(99, 99, 99));
+    transition: 0.4s;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.square:hover {
+    transform: translateY(-1%);
+}
+
+
+#image-1 {
+    content: url(../GRAFICA/Ultime-Novita/Electronic-Arts.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+
+}
+
+#image-2 {
+    background-image: url(../GRAFICA/Ultime-Novita/babbo-natale.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-3 {
+    background-image: url(../GRAFICA/Ultime-Novita/the-sims.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-4 {
+    background-image: url(../GRAFICA/Ultime-Novita/Electronic-Arts.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-5 {
+    background-image: url(../GRAFICA/Ultime-Novita/battlefield.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-6 {
+    background-image: url(../GRAFICA/Ultime-Novita/Electronic-Arts.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.buttone-un {
+   
+    margin: auto;
+  width: 60%;
+  align-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-dettagli {
+    border: 2px solid black;
+    position: relative;
+    font-family: suprabold;
+    height: 3.125rem;
+    width: 9.2rem;
+    transition: 0.1s;
+    background-color: white;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.button-dettagli:hover {
+    transform: scale(105%);
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    .squares {
+        display: grid;
+        grid-template-columns: 0fr 0fr;
+        width: auto;
+    }
+
+    .tab-boss {
+        margin-left: 2%;
+        width: 100%;
+
+    }
+
+    .tab {
+        white-space: nowrap;
+        
+        width: auto;
+        padding-left: 5%;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--ciao);
+}
+
+@media (max-width:760px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    
+        .titolo-logo {
+            display: unset;
+            flex-direction: unset;
+            
+        
+        }
+    .squares {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1;
+        width: auto;
+    }
+
+    .square {
+        height: 15vh;
+        width: 80vw;
+    }
+
+    .square:hover {
+        transform: translateY(-5%);
+    }
+
+    .immagine-sfondo {
+        display: none;
+    }
+
+    .testo-padding {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .titolo-electronic-arts{
+        text-align: center;
+    }
+    .data-titoli-electronic{
+        text-align: center;
+        padding-right: 5%;
+    }
+
+    .tito2UN {
+        text-align: center;
+    }
+    .testoUN{
+        display: none;
+    }
+
+    .tab {
+        white-space: no-wrap;
+        overflow-x: scroll;
+        padding-left: 20%;
+        padding-right: 5%;
+        margin-right: 5%;
+
+    }
+
+    .button-dettagli {
+               width: 28rem;
+    }
+
+   
+}
+@media (max-width:550px){
+    .button-dettagli{
+        width: 21rem;
+    }
+}
+@media (max-width:450px){
+    .tab{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .tabs{
+        padding-left: 15%;
+    }
+    .button-dettagli{
+        width: 15rem;
+    }
+    .data-titoli-electronic{
+        margin: 0;
+    }
+}
+/* FINE ALBRIM */
+    
+    
+/*INIZIO GIOVANNI*/
+    *{
     margin: 0;
     padding: 0;
     font-family: supraregular;
@@ -251,8 +1316,4 @@ transform: scale(103%);
   flex-direction: row-reverse;
 }
 
-
-
-
-    
-  
+/*FINE GIOVANNI*/

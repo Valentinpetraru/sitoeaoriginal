@@ -7,8 +7,9 @@
 }
 
 @font-face {
-  src: url(../CSS/UTILS/FONT/SuperaGothic-Regular.otf);
-  font-family: supraregular;
+
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Regular.otf);
+    font-family: supraregular;
 }
 
 @font-face {
@@ -101,6 +102,381 @@
   padding-top: 50px;
 }
 
+@font-face {
+    src: url(../CSS/UTILS/FONT/SuperaGothic-Light.otf);
+    font-family: supralight;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden;
+}
+*{
+    box-sizing: border-box;
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    width: 90vmax;
+    height: 3.1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    flex-wrap: nowrap;
+    margin: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+
+}
+
+.tab-links, .tab-links-fifa{
+    position: relative;
+    border: none;
+    height: 100%;
+    font-family: supraregular;
+    padding: 5px 10px ;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    background-color: white;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin: 0;
+
+
+}
+
+.tab-links:hover, .tab-links-fifa:hover {
+    background-color: rgba(148, 148, 148, 0.5);
+}
+
+.tab-links:nth-child(1n+0):after, .tab-links-fifa:after{
+    content: "";
+    position: absolute;
+    border-left: 2px solid rgba(0, 0, 0, 0.15);
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#inside-ea::after {
+    border-left: none;
+}
+
+
+.tab-links:focus::before {
+    content: "";
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    width: 65%;
+    border-bottom: 3px solid red;
+}
+.tab-links-fifa:focus::before{
+content: "";
+    position: absolute;
+    left: 0.6em;
+    bottom: 0;
+    width: 70%;
+    border-bottom: 3px solid red;
+}
+
+.titolo-logo {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ultime-novita {
+    text-align: center;
+    font-family: supraregular;
+    font-size: 33px;
+}
+
+.tito2UN {
+    padding: 0px;
+    margin: 10px 0 5px 10px;
+}
+
+.testoUN {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.testo-square {
+    text-align: left;
+}
+
+.testo-padding {
+    font-family: supraregular;
+    font-weight: bolder;
+
+}
+
+.titolo-electronic-arts {
+    color: var(--ea-theme-color);
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.data-titoli-electronic {
+    font-size: 13px;
+    margin-left: 1em;
+
+}
+
+.testo-padding {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+}
+
+
+.squares {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    background-color: white;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 2%;
+    width: 95vmax;
+
+}
+
+.square {
+    background: white;
+    height:33rem;
+    width: 21rem;
+    filter: drop-shadow(5px 5px 10px rgb(99, 99, 99));
+    transition: 0.4s;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.square:hover {
+    transform: translateY(-1%);
+}
+
+
+#image-1 {
+    content: url(../GRAFICA/Ultime-Novita/Electronic-Arts.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+
+}
+
+#image-2 {
+    background-image: url(../GRAFICA/Ultime-Novita/babbo-natale.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-3 {
+    background-image: url(../GRAFICA/Ultime-Novita/the-sims.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-4 {
+    background-image: url(../GRAFICA/Ultime-Novita/Electronic-Arts.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-5 {
+    background-image: url(../GRAFICA/Ultime-Novita/battlefield.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+}
+
+#image-6 {
+    background-image: url(../GRAFICA/Ultime-Novita/Electronic-Arts.jpg);
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.buttone-un {
+   
+    margin: auto;
+  width: 60%;
+  align-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-dettagli {
+    border: 2px solid black;
+    position: relative;
+    font-family: suprabold;
+    height: 3.125rem;
+    width: 9.2rem;
+    transition: 0.1s;
+    background-color: white;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.button-dettagli:hover {
+    transform: scale(105%);
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    .squares {
+        display: grid;
+        grid-template-columns: 0fr 0fr;
+        width: auto;
+    }
+
+    .tab-boss {
+        margin-left: 2%;
+        width: 100%;
+
+    }
+
+    .tab {
+        white-space: nowrap;
+        
+        width: auto;
+        padding-left: 5%;
+    }
+
+    /*  */
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--ciao);
+}
+
+@media (max-width:760px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    
+        .titolo-logo {
+            display: unset;
+            flex-direction: unset;
+            
+        
+        }
+    .squares {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1;
+        width: auto;
+    }
+
+    .square {
+        height: 15vh;
+        width: 80vw;
+    }
+
+    .square:hover {
+        transform: translateY(-5%);
+    }
+
+    .immagine-sfondo {
+        display: none;
+    }
+
+    .testo-padding {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .titolo-electronic-arts{
+        text-align: center;
+    }
+    .data-titoli-electronic{
+        text-align: center;
+        padding-right: 5%;
+    }
+
+    .tito2UN {
+        text-align: center;
+    }
+    .testoUN{
+        display: none;
+    }
+
+    .tab {
+        white-space: no-wrap;
+        overflow-x: scroll;
+        padding-left: 20%;
+        padding-right: 5%;
+        margin-right: 5%;
+
+    }
+
+    .button-dettagli {
+               width: 28rem;
+    }
+
+    /*  */
+}
+@media (max-width:550px){
+     
+    
+    .button-dettagli{
+        width: 21rem;
+    }
+}
+@media (max-width:450px){
+    .tab{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .tabs{
+        padding-left: 15%;
+    }
+    .button-dettagli{
+        width: 15rem;
+    }
+    .data-titoli-electronic{
+        margin: 0;
+    }
+    
+=======
 #container-box {
   max-width: 1300px;
   display: flex;
@@ -719,6 +1095,7 @@ nav a img{
     #btn-giochi-v a{
         width: 80%;
     } 
+
 }
 
 
